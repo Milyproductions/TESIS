@@ -1203,3 +1203,224 @@ footer {
     line-height: 1.4 !important;
   }
 }
+/* ==== FONDO PARA QUIÉNES SOMOS ==== */
+
+.section-about {
+  position: relative;
+  padding: 6rem 1.25rem 4rem;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.90)),
+    url("img/quienes-somos-bg.jpg"); /* cambia el nombre si tu imagen tiene otro */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Para que el texto se vea bien sobre el fondo */
+.section-about .title-xl,
+.section-about .section-sub,
+.section-about p,
+.section-about h3 {
+  color: #fff !important;
+}
+
+/* Opcional: desactivar bordes muy claros en las tarjetas */
+.section-about .feature-card {
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+/* ==== FONDO PARA QUIÉNES SOMOS ==== */
+
+.section-about {
+  position: relative;
+  padding: 6rem 1.25rem 4rem;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.90)),
+    url("img/quienes-somos-bg.jpg"); /* cambia el nombre si tu imagen tiene otro */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Para que el texto se vea bien sobre el fondo */
+.section-about .title-xl,
+.section-about .section-sub,
+.section-about p,
+.section-about h3 {
+  color: #fff !important;
+}
+
+/* Opcional: desactivar bordes muy claros en las tarjetas */
+.section-about .feature-card {
+  background: rgba(0,0,0,0.35);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+/* =======================================
+   SECCIÓN PLANES DE PRODUCCIÓN (COMPLETA)
+   ======================================= */
+
+.section-plans {
+  position: relative;
+  padding: 6rem 1.25rem 4rem;
+
+  /* 🔥 Fondo cinematográfico con imagen */
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.95)),
+    url("img/fondo-planes.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Títulos dentro de la sección */
+.section-plans .title-xl {
+  color: #ffffff !important;
+}
+
+.section-plans .section-sub {
+  color: #dddddd !important;
+}
+
+/* Grilla de tarjetas */
+.section-plans .plans-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+  align-items: stretch;
+}
+
+/* Tarjeta individual */
+.section-plans .plan-card {
+  background: rgba(0,0,0,0.55);
+  border-radius: var(--radius-md);
+  padding: 1.4rem 1.3rem 1.5rem;
+  border: 1px solid rgba(255,255,255,0.12);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  backdrop-filter: blur(4px);
+}
+
+/* Precios y textos */
+.section-plans .plan-card h3,
+.section-plans .plan-card .price,
+.section-plans .plan-card .plan-desc {
+  color: #ffffff !important;
+}
+
+.section-plans .plan-card ul {
+  color: #cccccc !important;
+  margin: 0.6rem 0 1.3rem;
+  padding-left: 1.1rem;
+}
+
+/* Botón al fondo */
+.section-plans .plan-card .btn-primary {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Responsive móvil */
+@media (max-width: 768px) {
+  .section-plans {
+    padding: 4rem 1rem 3rem;
+  }
+
+  .section-plans .title-xl {
+    font-size: 2rem !important;
+  }
+
+  .section-plans .plans-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* =========================
+   AJUSTES SOLO PARA CELULAR
+   ========================= */
+@media (max-width: 768px) {
+
+  /* HEADER más compacto en móvil */
+  .site-header {
+    padding: 0.6rem 1rem;
+  }
+
+  .logo-mark {
+    width: 42px;
+    height: 42px;
+  }
+
+  .logo-text {
+    font-size: 1.1rem;
+    line-height: 1.1;
+  }
+
+  /* HERO DE SERVICIOS (CINE Y CONTENIDO, POSTPRODUCCIÓN, REELS, etc.) */
+  .service-hero {
+    padding: 3.5rem 1rem 3rem;
+    background-position: center center;
+  }
+
+  .service-hero-inner {
+    max-width: 100%;
+  }
+
+  .service-hero-title {
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.7rem;
+  }
+
+  .service-hero-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+
+  .service-hero .btn-primary {
+    width: 100%;
+    text-align: center;
+    padding: 0.85rem;
+    font-size: 0.95rem;
+  }
+
+  /* PLANES de producción: una sola columna en móvil */
+  .section-plans {
+    padding: 4rem 1rem 3rem;
+  }
+
+  .section-plans .plans-grid {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+  }
+
+  .section-plans .plan-card {
+    padding: 1.2rem 1rem 1.4rem;
+  }
+
+  .section-plans .plan-card .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* CONTACTO más limpio en móvil */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .section-contact .title-xl {
+    font-size: 2rem;
+  }
+
+  .section-contact .section-sub {
+    font-size: 0.95rem;
+  }
+}

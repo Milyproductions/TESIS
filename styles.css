@@ -1111,3 +1111,95 @@ footer {
   display: block;
   object-fit: cover;
 }
+/* Texto del hero más grande */
+.hero-video-title {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  font-size: clamp(4rem, 7vw, 6rem); /* ← AUMENTADO REALMENTE */
+  line-height: 1;
+  margin: 0.6rem 0 0.3rem;
+  letter-spacing: 0.05em;
+}
+
+/* Meta info (agencia, proyecto, director) más visible */
+.hero-video-meta {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  margin: 0.1rem 0;
+}
+
+/* Alineado perfecto a la izquierda */
+.hero-video-content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;        /* Más ancho para que no se corte */
+  margin-left: 4%;         /* Alineado limpio */
+  margin-bottom: 3rem;
+}
+/* ======================= */
+/*     RESPONSIVE MOVIL    */
+/* ======================= */
+
+@media (max-width: 768px) {
+
+  /* Títulos grandes */
+  .title-xl {
+    font-size: 1.9rem !important;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  /* Grilla de contacto: hacerla 1 sola columna */
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Formularios más compactos */
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem !important;
+    padding: 0.7rem !important;
+  }
+
+  /* Grilla de planes en una sola columna en móvil */
+  .section-plans .plans-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  /* Tarjetas de planes más legibles */
+  .plan-card {
+    padding: 1.2rem !important;
+  }
+
+  .plan-card h3 {
+    font-size: 1.3rem !important;
+  }
+
+  .plan-card .price {
+    font-size: 1.4rem !important;
+  }
+
+  /* Asegurar que el botón NO se salga de la tarjeta */
+  .plan-card .btn-primary {
+    width: 100% !important;
+    text-align: center !important;
+    font-size: 0.95rem !important;
+    padding: 0.8rem !important;
+  }
+
+  /* Reducir márgenes generales para que todo quede centrado */
+  .section-inner {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Ajustar texto del contacto */
+  .section-contact .section-sub {
+    font-size: 0.95rem !important;
+    line-height: 1.4 !important;
+  }
+}

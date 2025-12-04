@@ -744,11 +744,17 @@ footer {
 
 @media (max-width: 768px) {
 
-  .title-xl {
-    font-size: 1.9rem;
-    line-height: 1.1;
-    margin-bottom: 1rem;
-    text-align: left;
+  /* ...lo que ya tengas... */
+
+  /* HERO en celular: texto más arriba */
+  .hero-video {
+    padding: 80px 20px 40px;  /* arriba, lados, abajo */
+    align-items: flex-start;  /* antes estaba flex-end */
+  }
+
+  .hero-video-content {
+    margin-left: 0;
+    margin-bottom: 0;         /* para que no lo empuje hacia abajo */
   }
 
   .service-hero {

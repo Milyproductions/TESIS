@@ -748,7 +748,7 @@ footer {
 
   /* HERO en celular: texto más arriba */
   .hero-video {
-    padding: 170px 20px 40px;  /* arriba, lados, abajo */
+    padding: 230px 20px 40px;  /* arriba, lados, abajo */
     align-items: flex-start;  /* antes estaba flex-end */
   }
 

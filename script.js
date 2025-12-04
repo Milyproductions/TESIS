@@ -160,4 +160,16 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("No se pudo inicializar PayPal:", e);
     }
   }
+
+  // FORMULARIO - MENSAJE DE AGRADECIMIENTO
+  const contactForm = document.querySelector(".contact-form");
+  const successMsg = document.getElementById("form-success");
+
+  if (contactForm && successMsg) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault(); // Evita recarga
+      successMsg.style.display = "block"; // Mostrar mensaje
+      contactForm.reset(); // Limpiar formulario
+    });
+  }
 });

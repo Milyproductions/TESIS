@@ -1,15 +1,15 @@
 :root {
-  /* PALETA NUEVA */
-  --bg: #000000;          /* fondo negro */
-  --bg-soft: #111111;     /* gris muy oscuro */
-  --bg-card: #2b2b2b;     /* gris de tarjetas */
+  /* PALETA */
+  --bg: #000000;
+  --bg-soft: #111111;
+  --bg-card: #2b2b2b;
 
-  --accent: #07c4ef;      /* celeste principal */
+  --accent: #07c4ef;
   --accent-soft: #07c4ef33;
-  --accent-alt: #ff0000;  /* rojo secundario */
+  --accent-alt: #ff0000;
 
-  --text: #f8f8f8;        /* blanco suave */
-  --text-soft: #c0c0c0;   /* gris claro */
+  --text: #f8f8f8;
+  --text-soft: #c0c0c0;
 
   --gray-mid: #888888;
   --gray-light: #f7e7e7;
@@ -18,11 +18,9 @@
   --radius-md: 1rem;
   --shadow-soft: 0 18px 40px rgba(0,0,0,0.7);
 
-  /* TIPOS: igual que antes */
   --font-main: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   --font-display: "Anton", system-ui, sans-serif;
 }
-
 
 *,
 *::before,
@@ -64,13 +62,13 @@ header {
 .logo-link {
   display: flex;
   align-items: center;
-  gap: 0.80rem;
+  gap: 0.8rem;
   text-decoration: none;
 }
 
 .logo-img {
-  width: 65px;     /* AUMENTA el tamaño */
-  height: 65px;    /* AUMENTA el tamaño */
+  width: 65px;
+  height: 65px;
   object-fit: contain;
   border-radius: 50%;
 }
@@ -78,7 +76,7 @@ header {
 .logo-text {
   font-family: var(--font-display);
   letter-spacing: 0.14em;
-  font-size: 2.0rem;
+  font-size: 2rem;
   text-transform: uppercase;
   color: var(--text);
 }
@@ -181,16 +179,17 @@ header {
 .hero-video-content {
   position: relative;
   z-index: 1;
-  max-width: 700px;
-  margin-left: clamp(2rem, 10vw, 7rem);
-  margin-bottom: 2.5rem;
+  max-width: 800px;
+  margin-left: 4%;
+  margin-bottom: 3rem;
 }
 
 .hero-video-meta {
-  font-size: 0.85rem;
+  font-size: 1.15rem;
+  font-weight: 600;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  margin: 0.2rem 0;
+  margin: 0.1rem 0;
 }
 
 .hero-video-meta span {
@@ -200,21 +199,10 @@ header {
 .hero-video-title {
   font-family: var(--font-display);
   text-transform: uppercase;
-  font-size: clamp(3rem, 6vw, 4rem);
-  line-height: 1.05;
-  margin: 0.7rem 0 0.4rem;
+  font-size: clamp(4rem, 7vw, 6rem);
+  line-height: 1;
+  margin: 0.6rem 0 0.3rem;
   letter-spacing: 0.05em;
-}
-
-.hero-video-scroll {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 0.85rem;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: #f5f5f5;
 }
 
 /* BOTONES */
@@ -252,7 +240,7 @@ header {
   font-size: 0.95rem;
 }
 
-/* TITULO XL UNIFICADO */
+/* TITULOS */
 
 .title-xl {
   font-family: var(--font-display);
@@ -264,7 +252,7 @@ header {
   margin-bottom: 1.5rem;
 }
 
-/* HERO SERVICIO */
+/* HERO SERVICIOS */
 
 .service-hero {
   position: relative;
@@ -299,111 +287,151 @@ header {
   line-height: 1.55;
 }
 
-/* fondos específicos */
+/* FONDOS HERO SERVICIOS */
+
 .spots-hero {
   background:
     linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.5), rgba(0,0,0,0.2)),
-    url("img/FOTO\ 20.png") center/cover no-repeat;
+    url("img/FOTO 20.png") center/cover no-repeat;
 }
 
 .contenido-hero {
   background:
     linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.5), rgba(0,0,0,0.2)),
-    url("img/FOTO\ 21.png") center/cover no-repeat;
+    url("img/FOTO 21.png") center/cover no-repeat;
 }
 
 .cine-hero {
   background:
     linear-gradient(to right, rgba(0,0,0,0.85), rgba(0,0,0,0.5), rgba(0,0,0,0.2)),
-    url("img/FOTO\ 22.png") center/cover no-repeat;
+    url("img/FOTO 22.png") center/cover no-repeat;
 }
 
+/* HERO POSTPRODUCCIÓN */
 
-/* DETALLE SERVICIO (POSTPRODUCCIÓN) */
-
-./* BLOQUE DE POSTPRODUCCIÓN */
-.postpro {
-  padding: 0;
-  background: #000;
-}
-
-.postpro-inner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  gap: 40px;
-  padding: 80px 8%;
-}
-
-.postpro-img-box {
+.postpro-hero {
   width: 100%;
-  height: 450px;
-  overflow: hidden;
-  border-radius: 8px;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  padding: 60px 0;
+  background:
+    linear-gradient(to right, rgba(0,0,0,0.88), rgba(0,0,0,0.55), rgba(0,0,0,0.20)),
+    url("img/FOTO 23.png") center/cover no-repeat;
 }
 
-.postpro-img-box img {
+.postpro-hero .service-hero-inner {
+  max-width: 700px;
+  margin-left: 6%;
+  color: #fff;
+}
+
+/* REELS - SECCIÓN CON FONDO */
+
+.reels-section {
+  position: relative;
+  padding: 100px 5% 70px;
+  overflow: hidden;
+}
+
+.reels-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.reels-bg img {
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* ⭐ Este es el truco */
-  object-position: center; /* ⭐ Centrada como en Levector */
-  display: block;
+  object-fit: cover;
+  filter: brightness(0.55);
 }
 
-
-/* REELS */
-
-.section-reels {
-  background: #050505;
+.reels-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
 }
+
+.reels-inner .title-xl {
+  font-family: "Anton", sans-serif;
+  font-size: 64px;
+  margin-bottom: 8px;
+}
+
+.reels-inner .section-sub {
+  font-size: 18px;
+  margin-bottom: 28px;
+}
+
+/* TARJETAS REELS */
 
 .reels-grid {
-  margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
 }
 
 .reel-card {
-  background: #121212;
-  border-radius: var(--radius-md);
-  padding: 1rem;
-  border: 1px solid rgba(255,255,255,0.08);
+  background: #111;
+  padding: 22px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.06);
 }
 
-.reel-thumb {
-  border-radius: 0.9rem;
-  overflow: hidden;
-  margin-bottom: 0.6rem;
-}
-
-.reel-thumb img {
+.reel-video-wrapper {
   width: 100%;
-  height: 160px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #000;
+  margin-bottom: 15px;
+}
+
+.reel-video {
+  width: 100%;
+  height: 100%;
+  display: block;
   object-fit: cover;
 }
 
 .reel-meta {
-  font-size: 0.75rem;
-  color: var(--accent);
+  font-size: 11px;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  letter-spacing: 0.16em;
+  color: #07C4EF;
+  margin-bottom: 6px;
 }
 
 .reel-card h3 {
-  margin: 0.4rem 0 0.3rem;
-  font-size: 1rem;
+  margin-bottom: 6px;
+  font-weight: 700;
 }
 
 .reel-desc {
-  font-size: 0.9rem;
-  color: var(--text-soft);
+  font-size: 14px;
+  line-height: 1.4;
+  opacity: 0.85;
 }
 
 /* QUIÉNES SOMOS */
 
 .section-about {
-  background: radial-gradient(circle at top, #181818 0%, #050505 60%, #020202 100%);
+  position: relative;
+  padding: 6rem 1.25rem 4rem;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.90)),
+    url("img/quienes-somos-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-about .title-xl,
+.section-about .section-sub,
+.section-about p,
+.section-about h3 {
+  color: #fff;
 }
 
 .about-grid {
@@ -414,10 +442,11 @@ header {
 }
 
 .about-item {
-  background: #111;
+  background: rgba(0,0,0,0.35);
   border-radius: var(--radius-md);
   padding: 1.1rem;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(6px);
 }
 
 .about-item i {
@@ -428,26 +457,59 @@ header {
 /* PLANES */
 
 .section-plans {
-  background: #050505;
+  position: relative;
+  padding: 6rem 1.25rem 4rem;
+  background:
+    linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.95)),
+    url("img/fondo-planes.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.section-plans .title-xl {
+  color: #ffffff;
+}
+
+.section-plans .section-sub {
+  color: #dddddd;
 }
 
 .plans-grid {
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.8rem;
+  align-items: stretch;
 }
 
 .plan-card {
-  background: #111;
+  background: rgba(0,0,0,0.55);
   border-radius: var(--radius-md);
-  padding: 1.3rem 1.2rem 1.5rem;
+  padding: 1.4rem 1.3rem 1.5rem;
   border: 1px solid rgba(255,255,255,0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  backdrop-filter: blur(4px);
 }
 
 .plan-featured {
   border-color: var(--accent);
   box-shadow: var(--shadow-soft);
+}
+
+.plan-card h3,
+.plan-card .price,
+.plan-card .plan-desc {
+  color: #ffffff;
+}
+
+.plan-card ul {
+  color: #cccccc;
+  margin: 0.6rem 0 1.3rem;
+  padding-left: 1.1rem;
 }
 
 .price {
@@ -461,11 +523,11 @@ header {
   font-size: 0.9rem;
 }
 
-.plan-card ul {
-  margin: 0.6rem 0 1rem;
-  padding-left: 1.1rem;
-  font-size: 0.89rem;
-  color: var(--text-soft);
+.plan-card .btn-primary {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
 }
 
 /* CONTACTO */
@@ -532,6 +594,7 @@ header {
   transform: translateX(100%);
   transition: transform 0.3s ease;
   z-index: 80;
+  overflow-y: auto;
 }
 
 .cart-panel.open {
@@ -543,6 +606,7 @@ header {
   display: flex;
   flex-direction: column;
   padding: 1rem 1.2rem;
+  overflow-y: auto;
 }
 
 .cart-close {
@@ -636,7 +700,7 @@ footer {
   background: #050505;
 }
 
-/* RESPONSIVE */
+/* MENÚ RESPONSIVE Y AJUSTES GENERALES */
 
 @media (max-width: 860px) {
   .nav-menu {
@@ -675,694 +739,18 @@ footer {
     grid-template-columns: 1fr;
   }
 }
-/* === HERO POSTPRODUCCIÓN === */
-.postpro-hero {
-  width: 100%;
-  height: 420px;
-  display: flex;
-  align-items: center;
-  padding: 60px 0;
-  background:
-    linear-gradient(to right, rgba(0,0,0,0.88), rgba(0,0,0,0.55), rgba(0,0,0,0.20)),
-    url("img/FOTO\ 23.png") center/cover no-repeat;
-}
 
-.postpro-hero .service-hero-inner {
-  max-width: 700px;
-  margin-left: 6%;
-  color: #fff;
-}
-
-.service-tag {
-  font-size: 14px;
-  letter-spacing: 3px;
-  color: #d8d8d8;
-  margin-bottom: 10px;
-  font-weight: 300;
-}
-
-.service-hero-title {
-  font-size: 62px;
-  font-weight: 700;
-  margin: 0 0 20px 0;
-  font-family: 'Anton', sans-serif;
-}
-
-.service-hero-text {
-  font-size: 17px;
-  line-height: 1.6;
-  max-width: 550px;
-  margin-bottom: 25px;
-  color: #e6e6e6;
-}
-
-.btn-primary {
-  display: inline-block;
-  background: #07C4EF;
-  color: #000;
-  padding: 12px 28px;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 50px;
-  text-decoration: none;
-}
-/* === HERO REELS === */
-.reels-hero {
-  width: 100%;
-  height: 420px;
-  display: flex;
-  align-items: center;
-  padding: 60px 0;
-  background:
-    linear-gradient(to right, rgba(0,0,0,0.88), rgba(0,0,0,0.55), rgba(0,0,0,0.20)),
-    url("img/reels-bg.jpg") center/cover no-repeat;
-}
-
-.reels-hero .service-hero-inner {
-  max-width: 700px;
-  margin-left: 6%;
-  color: #fff;
-}
-
-.service-tag {
-  font-size: 14px;
-  letter-spacing: 3px;
-  color: #d8d8d8;
-  margin-bottom: 10px;
-  font-weight: 300;
-}
-
-.service-hero-title {
-  font-size: 62px;
-  font-weight: 700;
-  margin: 0 0 20px 0;
-  font-family: 'Anton', sans-serif;
-}
-
-.service-hero-text {
-  font-size: 17px;
-  line-height: 1.6;
-  max-width: 550px;
-  margin-bottom: 25px;
-  color: #e6e6e6;
-}
-
-.btn-primary {
-  display: inline-block;
-  background: #07C4EF;
-  color: #000;
-  padding: 12px 28px;
-  font-size: 15px;
-  font-weight: 600;
-  border-radius: 50px;
-  text-decoration: none;
-}
-/* === HERO REELS — OPCIÓN 2 (más elegante y moderna) === */
-.reels-hero {
-  width: 100%;
-  min-height: 420px;
-  padding: 80px 0;
-  display: flex;
-  align-items: center;
-
-  background: 
-    linear-gradient(90deg, rgba(0,0,0,0.90) 0%, rgba(0,0,0,0.50) 55%, rgba(0,0,0,0.15) 100%),
-    url("img/reels.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
-
-.reels-hero .service-hero-inner {
-  color: #fff;
-  margin-left: 6%;
-  max-width: 650px;
-}
-
-.reels-hero .service-tag {
-  font-size: 14px;
-  letter-spacing: 4px;
-  color: #bbbbbb;
-  margin-bottom: 12px;
-  font-weight: 300;
-}
-
-.reels-hero .service-hero-title {
-  font-family: "Anton", sans-serif;
-  font-size: 70px;
-  font-weight: 700;
-  line-height: 1;
-  margin-bottom: 18px;
-}
-
-.reels-hero .service-hero-text {
-  font-size: 18px;
-  line-height: 1.7;
-  max-width: 500px;
-  color: #e8e8e8;
-  margin-bottom: 30px;
-}
-
-.reels-hero .btn-primary {
-  display: inline-block;
-  padding: 12px 34px;
-  background: #07C4EF;
-  color: #000;
-  font-weight: 700;
-  border-radius: 50px;
-  text-decoration: none;
-  font-size: 16px;
-  transition: 0.3s ease;
-}
-
-.reels-hero .btn-primary:hover {
-  background: #07C4EF;
-  transform: translateY(-3px);
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .reels-hero {
-    min-height: 340px;
-    padding: 60px 0;
-  }
-
-  .reels-hero .service-hero-title {
-    font-size: 48px;
-  }
-
-  .reels-hero .service-hero-text {
-    font-size: 16px;
-  }
-}
-/* Fondo para la sección completa de REELS */
-.reels-section {
-  position: relative;
-  padding: 80px 0;
-  background:
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
-    url("img/FOTO 24.jpg") center/cover no-repeat;
-  border-radius: 10px;
-}
-/* Fondo para la sección completa de REELS */
-.reels-section {
-  position: relative;
-  padding: 80px 0;
-  /* QUITA o comenta cualquier background anterior de .reels-section */
-
-  background:
-    linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
-    url("FOTO 24.jpg") center/cover no-repeat;
-}
-/* Sección REELS con imagen de fondo */
-.reels-section {
-  position: relative;
-  overflow: hidden;
-  padding: 80px 0;
-}
-
-/* Capa de fondo */
-.reels-bg {
-  position: absolute;
-  inset: 0;              /* top:0; right:0; bottom:0; left:0 */
-  z-index: 0;
-}
-
-.reels-bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;     /* hace que se vea como fondo */
-  filter: brightness(0.35);  /* oscurece un poco para que se lea el texto */
-}
-
-/* Contenido por encima de la imagen */
-.reels-section .reels-inner {
-  position: relative;
-  z-index: 1;
-}
-
-/* Opcional: centrar y abrir un poco el layout */
-.reels-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.reels-text-only {
-  margin-bottom: 40px;
-}
-.reel-thumb {
-    width: 100%;
-    height: 220px;
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 15px;
-}
-
-.reel-thumb video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-.reels-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.reel-card {
-    background: #111;
-    padding: 25px;
-    border-radius: 14px;
-    border: 1px solid rgba(255,255,255,0.06);
-}
-
-.reel-thumb {
-    width: 100%;
-    height: 230px;
-    border-radius: 14px;
-    overflow: hidden;
-    margin-bottom: 15px;
-    background: #000;
-}
-
-.reel-thumb video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-}
-
-.reel-meta {
-    font-size: 12px;
-    letter-spacing: 2px;
-    color: #d0a86e;
-    margin-bottom: 8px;
-}
-
-.reel-card h3 {
-    margin-bottom: 8px;
-    font-weight: 700;
-}
-
-.reel-desc {
-    opacity: 0.8;
-    line-height: 1.4;
-}
-.reels-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 22px;
-    width: 100%;
-    margin-top: 30px;
-}
-
-.reel-card {
-    background: #111;
-    padding: 22px;
-    border-radius: 14px;
-    border: 1px solid rgba(255,255,255,0.06);
-}
-
-.reel-thumb {
-    width: 100%;
-    height: 180px;      /* ALTURA PEQUEÑA Y BONITA */
-    border-radius: 12px;
-    overflow: hidden;
-    margin-bottom: 16px;
-    background: #000;
-}
-
-.reel-thumb video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;  /* el video se recorta bonito */
-    display: block;
-}
-/* ===== REELS CON IMAGEN DE FONDO ===== */
-
-.reels-section {
-  position: relative;
-  padding: 100px 5% 70px;
-  overflow: hidden;
-}
-
-/* capa de imagen de fondo */
-.reels-bg {
-  position: absolute;
-  inset: 0;              /* top:0; right:0; bottom:0; left:0 */
-  z-index: 0;
-}
-
-.reels-bg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.55);  /* oscurece un poco para que se lea el texto */
-}
-
-/* contenido encima del fondo */
-.reels-inner {
-  position: relative;
-  z-index: 1;
-}
-
-/* título y subtítulo */
-.reels-inner .title-xl {
-  font-family: "Anton", sans-serif;
-  font-size: 64px;
-  margin-bottom: 8px;
-}
-
-.reels-inner .section-sub {
-  font-size: 18px;
-  margin-bottom: 28px;
-}
-
-/* ===== TARJETAS EN PARALELO ===== */
-
-.reels-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-/* tarjeta */
-.reel-card {
-  background: #111;
-  padding: 22px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.06);
-}
-
-/* contenedor del video */
-.reel-thumb {
-  width: 100%;
-  height: 180px;       /* tamaño del video */
-  border-radius: 12px;
-  overflow: hidden;
-  margin-bottom: 15px;
-  background: #000;
-}
-
-/* video dentro */
-.reel-thumb video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* textos de tarjeta */
-.reel-meta {
-  font-size: 11px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #07C4EF;
-  margin-bottom: 6px;
-}
-
-.reel-card h3 {
-  margin-bottom: 6px;
-  font-weight: 700;
-}
-
-.reel-desc {
-  font-size: 14px;
-  line-height: 1.4;
-  opacity: 0.85;
-}
-/* Contenedor del video dentro de la tarjeta */
-.reel-video-wrapper {
-  width: 100%;
-  border-radius: 18px;
-  overflow: hidden;         /* 🔥 aquí se recorta TODO lo que sobresalga */
-  background: #000;
-  margin-bottom: 15px;
-}
-
-/* El video ocupa todo el contenedor y se recorta bonito */
-.reel-video-wrapper .reel-video {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-/* Texto del hero más grande */
-.hero-video-title {
-  font-family: var(--font-display);
-  text-transform: uppercase;
-  font-size: clamp(4rem, 7vw, 6rem); /* ← AUMENTADO REALMENTE */
-  line-height: 1;
-  margin: 0.6rem 0 0.3rem;
-  letter-spacing: 0.05em;
-}
-
-/* Meta info (agencia, proyecto, director) más visible */
-.hero-video-meta {
-  font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  margin: 0.1rem 0;
-}
-
-/* Alineado perfecto a la izquierda */
-.hero-video-content {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;        /* Más ancho para que no se corte */
-  margin-left: 4%;         /* Alineado limpio */
-  margin-bottom: 3rem;
-}
-/* ======================= */
-/*     RESPONSIVE MOVIL    */
-/* ======================= */
+/* AJUSTES SOLO CELULAR */
 
 @media (max-width: 768px) {
 
-  /* Títulos grandes */
   .title-xl {
-    font-size: 1.9rem !important;
+    font-size: 1.9rem;
     line-height: 1.1;
     margin-bottom: 1rem;
     text-align: left;
   }
 
-  /* Grilla de contacto: hacerla 1 sola columna */
-  .contact-grid {
-    grid-template-columns: 1fr !important;
-    gap: 1.5rem !important;
-  }
-
-  /* Formularios más compactos */
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 0.95rem !important;
-    padding: 0.7rem !important;
-  }
-
-  /* Grilla de planes en una sola columna en móvil */
-  .section-plans .plans-grid {
-    grid-template-columns: 1fr !important;
-    gap: 1.5rem !important;
-  }
-
-  /* Tarjetas de planes más legibles */
-  .plan-card {
-    padding: 1.2rem !important;
-  }
-
-  .plan-card h3 {
-    font-size: 1.3rem !important;
-  }
-
-  .plan-card .price {
-    font-size: 1.4rem !important;
-  }
-
-  /* Asegurar que el botón NO se salga de la tarjeta */
-  .plan-card .btn-primary {
-    width: 100% !important;
-    text-align: center !important;
-    font-size: 0.95rem !important;
-    padding: 0.8rem !important;
-  }
-
-  /* Reducir márgenes generales para que todo quede centrado */
-  .section-inner {
-    padding-left: 1rem !important;
-    padding-right: 1rem !important;
-  }
-
-  /* Ajustar texto del contacto */
-  .section-contact .section-sub {
-    font-size: 0.95rem !important;
-    line-height: 1.4 !important;
-  }
-}
-/* ==== FONDO PARA QUIÉNES SOMOS ==== */
-
-.section-about {
-  position: relative;
-  padding: 6rem 1.25rem 4rem;
-  background:
-    linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.90)),
-    url("img/quienes-somos-bg.jpg"); /* cambia el nombre si tu imagen tiene otro */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Para que el texto se vea bien sobre el fondo */
-.section-about .title-xl,
-.section-about .section-sub,
-.section-about p,
-.section-about h3 {
-  color: #fff !important;
-}
-
-/* Opcional: desactivar bordes muy claros en las tarjetas */
-.section-about .feature-card {
-  background: rgba(0,0,0,0.35);
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255,255,255,0.15);
-}
-/* ==== FONDO PARA QUIÉNES SOMOS ==== */
-
-.section-about {
-  position: relative;
-  padding: 6rem 1.25rem 4rem;
-  background:
-    linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.90)),
-    url("img/quienes-somos-bg.jpg"); /* cambia el nombre si tu imagen tiene otro */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Para que el texto se vea bien sobre el fondo */
-.section-about .title-xl,
-.section-about .section-sub,
-.section-about p,
-.section-about h3 {
-  color: #fff !important;
-}
-
-/* Opcional: desactivar bordes muy claros en las tarjetas */
-.section-about .feature-card {
-  background: rgba(0,0,0,0.35);
-  backdrop-filter: blur(6px);
-  border: 1px solid rgba(255,255,255,0.15);
-}
-/* =======================================
-   SECCIÓN PLANES DE PRODUCCIÓN (COMPLETA)
-   ======================================= */
-
-.section-plans {
-  position: relative;
-  padding: 6rem 1.25rem 4rem;
-
-  /* 🔥 Fondo cinematográfico con imagen */
-  background:
-    linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.95)),
-    url("img/fondo-planes.jpg");
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* Títulos dentro de la sección */
-.section-plans .title-xl {
-  color: #ffffff !important;
-}
-
-.section-plans .section-sub {
-  color: #dddddd !important;
-}
-
-/* Grilla de tarjetas */
-.section-plans .plans-grid {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.8rem;
-  align-items: stretch;
-}
-
-/* Tarjeta individual */
-.section-plans .plan-card {
-  background: rgba(0,0,0,0.55);
-  border-radius: var(--radius-md);
-  padding: 1.4rem 1.3rem 1.5rem;
-  border: 1px solid rgba(255,255,255,0.12);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
-  backdrop-filter: blur(4px);
-}
-
-/* Precios y textos */
-.section-plans .plan-card h3,
-.section-plans .plan-card .price,
-.section-plans .plan-card .plan-desc {
-  color: #ffffff !important;
-}
-
-.section-plans .plan-card ul {
-  color: #cccccc !important;
-  margin: 0.6rem 0 1.3rem;
-  padding-left: 1.1rem;
-}
-
-/* Botón al fondo */
-.section-plans .plan-card .btn-primary {
-  margin-top: auto;
-  width: 100%;
-  text-align: center;
-  font-weight: 600;
-}
-
-/* Responsive móvil */
-@media (max-width: 768px) {
-  .section-plans {
-    padding: 4rem 1rem 3rem;
-  }
-
-  .section-plans .title-xl {
-    font-size: 2rem !important;
-  }
-
-  .section-plans .plans-grid {
-    grid-template-columns: 1fr;
-  }
-}
-/* =========================
-   AJUSTES SOLO PARA CELULAR
-   ========================= */
-@media (max-width: 768px) {
-
-  /* HEADER más compacto en móvil */
-  .site-header {
-    padding: 0.6rem 1rem;
-  }
-
-  .logo-mark {
-    width: 42px;
-    height: 42px;
-  }
-
-  .logo-text {
-    font-size: 1.1rem;
-    line-height: 1.1;
-  }
-
-  /* HERO DE SERVICIOS (CINE Y CONTENIDO, POSTPRODUCCIÓN, REELS, etc.) */
   .service-hero {
     padding: 3.5rem 1rem 3rem;
     background-position: center center;
@@ -1391,7 +779,6 @@ footer {
     font-size: 0.95rem;
   }
 
-  /* PLANES de producción: una sola columna en móvil */
   .section-plans {
     padding: 4rem 1rem 3rem;
   }
@@ -1410,7 +797,6 @@ footer {
     text-align: center;
   }
 
-  /* CONTACTO más limpio en móvil */
   .contact-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -1423,4 +809,26 @@ footer {
   .section-contact .section-sub {
     font-size: 0.95rem;
   }
+
+  .reels-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MENSAJE DE ÉXITO FORMULARIO */
+
+.form-success-message {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: rgba(7, 196, 239, 0.15);
+  border: 1px solid #07c4ef;
+  color: #07c4ef;
+  font-size: 0.9rem;
+  border-radius: 8px;
+  animation: fadeIn 0.4s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
 }
